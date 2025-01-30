@@ -50,11 +50,13 @@ public class Lab1Problem2 {
     }
     public static float calculateGPA(int pointsEarned, int creditHoursCompleted){
         float GPA = pointsEarned/(float)creditHoursCompleted;
-        if (GPA <= 4.0){
+
+        if ((GPA <= 4.0) && (GPA > 0)){
             return GPA;
         } else {
             System.out.println("Please try again, there has been an error.");
             return 0;
         }
+
     }
 }

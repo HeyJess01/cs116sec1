@@ -35,7 +35,7 @@ public class ExamCalculator {
                 try{
                     System.out.println("Enter score #" + (i + 1) + ": ");
                     float input = scan.nextFloat();
-                    if ((input > 0) && (input <= 100)){
+                    if ((input >= 0) && (input <= 100)){
                         validValue = true;
                         examScores[i] = input;
 

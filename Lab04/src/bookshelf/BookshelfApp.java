@@ -15,7 +15,7 @@ public class BookshelfApp {
         A.addBook(book3);
         A.addBook(book4);
 
-        System.out.println(A.toString());
+        System.out.println(A);
 
     }
 }

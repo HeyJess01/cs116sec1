@@ -12,7 +12,7 @@ public class BookshelfAppBlankDemonstrate {
         B.addBook(book3);
         B.addBook(book4);
 
-        System.out.println(B.toString());
+        System.out.println(B);
 
     }
 }

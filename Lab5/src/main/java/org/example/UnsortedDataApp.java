@@ -31,8 +31,6 @@ public class UnsortedDataApp {
         System.out.println(Arrays.toString(dataArray));
 
         System.out.println("Out of order before bubble: " + UnsortedData.countOutOfPosition(dataArray));
-        UnsortedData.bubble(dataArray);
         System.out.println("Out of order after bubble: " + UnsortedData.countOutOfPosition(dataArray));
-        System.out.println(Arrays.toString(dataArray));
     }
 }

@@ -49,7 +49,6 @@ public class PlayGame {
             if(P3.won(myGame.getPrizeLocation())){
                 wins[2]++;
             }
-
             // All three players played the game - time to reset it.
             myGame.reset();
         }

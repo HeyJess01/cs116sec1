@@ -19,6 +19,15 @@ public class Game {
     }
 
     public int getOpenDoor(int initialGuess){
-
+        boolean arb = false;
+        int x = rand.nextInt(1,4);
+        while (!arb){
+            if ((x == initialGuess) || (x == prizeLocation)){
+                x = rand.nextInt(1,4);
+            } else {
+                arb = true;
+            }
+        }
+        return x;
     }
 }

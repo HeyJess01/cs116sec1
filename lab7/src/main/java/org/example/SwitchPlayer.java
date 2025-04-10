@@ -16,12 +16,13 @@ public class SwitchPlayer extends Player implements PlayerInterface{
         boolean arb = false;
         int x = rand.nextInt(1,4);
         while (!arb){
-            if (x == super.selectedDoor){
+            if (x == super.selectedDoor || x == openDoor){
                 x = rand.nextInt(1,4);
             } else {
                 arb = true;
             }
         }
+        super.selectedDoor = x;
         return x;
     }
 }
